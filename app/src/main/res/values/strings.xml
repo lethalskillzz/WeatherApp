@@ -4,4 +4,9 @@
     <string name="condition_partly_cloudy">Partly Cloudy</string>
     <string name="condition_unknown">Unknown</string>
     <string name="error_message">Failed to fetch weather forecast</string>
+    <string name="loading_text">Loading weather data…</string>
+    <string name="temperature_label">Temperature: %1$.1f°C</string>
+    <string name="condition_label">Condition: %1$s</string>
+    <string name="wind_speed_label">Wind Speed: %1$.1f km/h</string>
+    <string name="time_label">Time: %1$s</string>
 </resources>

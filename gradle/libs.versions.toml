@@ -2,33 +2,48 @@
 agp = "8.7.2"
 kotlin = "1.9.24"
 
-coreKtx = "1.15.0"
-
 appcompat = "1.7.0"
 material = "1.12.0"
+coreKtx = "1.15.0"
+compose = "1.7.5"
+compose-activity = "1.9.3"
+lifecycle = "2.8.7"
 
 hilt = "2.49"
+hilt-navigation-compose = "1.2.0"
+coroutines = "1.8.1"
 
 retrofit = "2.11.0"
 converter-moshi = "2.11.0"
-
+moshi-codegen = "1.15.0"
 three-ten-abp = "1.4.6"
 
 junit = "4.13.2"
+
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-activity = { module = "androidx.activity:activity-compose", version.ref = "compose-activity" }
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "converter-moshi" }
+moshi-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi-codegen" }
 three-ten-abp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "three-ten-abp" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
