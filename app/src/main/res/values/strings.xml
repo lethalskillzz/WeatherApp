@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="condition_clear_ky">Clear Sky</string>
+    <string name="condition_partly_cloudy">Partly Cloudy</string>
+    <string name="condition_unknown">Unknown</string>
+    <string name="error_message">Failed to fetch weather forecast</string>
 </resources>
