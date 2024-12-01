@@ -40,10 +40,13 @@ class WeatherViewModel @Inject constructor(
         updateWeather()
     }
 
+    // To interrupt the loop during testing
+    internal var stopUpdates: Boolean = false
+
     private fun updateWeather() {
         viewModelScope.launch {
             var index = 0
-            while (true) {
+            while (!stopUpdates) {
                 val (lat, lon) = locations[index]
                 _weatherState.update { useCase(lat, lon) }
                 index = (index + 1) % locations.size

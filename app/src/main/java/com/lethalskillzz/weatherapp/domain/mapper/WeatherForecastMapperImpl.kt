@@ -32,7 +32,7 @@ class WeatherForecastMapperImpl @Inject constructor(
             else -> resourceProvider.getString(R.string.condition_unknown)
         }
 
-    private fun formatTime(time: org.threeten.bp.Instant): String {
+    internal fun formatTime(time: org.threeten.bp.Instant): String {
         val formatter = DateTimeFormatter.ofPattern(TIME_FORMAT)
             .withZone(ZoneId.systemDefault())
         return formatter.format(time)
