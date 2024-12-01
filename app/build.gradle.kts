@@ -46,6 +46,11 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
 
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.converter.moshi)
+
+    implementation(libs.three.ten.abp)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

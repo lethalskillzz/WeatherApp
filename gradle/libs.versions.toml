@@ -9,6 +9,11 @@ material = "1.12.0"
 
 hilt = "2.49"
 
+retrofit = "2.11.0"
+converter-moshi = "2.11.0"
+
+three-ten-abp = "1.4.6"
+
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -21,6 +26,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "converter-moshi" }
+three-ten-abp = { module = "com.jakewharton.threetenabp:threetenabp", version.ref = "three-ten-abp" }
 
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
